@@ -28,6 +28,7 @@ func GetRedisFromConsul(vip *viper.Viper) (red *redis.Client, err error) {
 		&redis.ClusterOptions{
 			Addrs: []string{"192.168.100.131:6380", "192.168.100.131:6381", "192.168.100.131:6382"},
 		})
+	fmt.Println(1)
 	fmt.Println(clusterClients)
 	return red, nil
 }
