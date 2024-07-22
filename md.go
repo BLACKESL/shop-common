@@ -13,7 +13,6 @@ func Md5Encode(data string) string {
 	h.Write([]byte(data))
 	tempstr := h.Sum(nil)
 	return hex.EncodeToString(tempstr)
-	fmt.Println(1)
 }
 
 // 大写

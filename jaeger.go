@@ -1,7 +1,6 @@
 package common
 
 import (
-	"fmt"
 	"github.com/opentracing/opentracing-go"
 	"github.com/uber/jaeger-client-go"
 	"github.com/uber/jaeger-client-go/config"
@@ -22,6 +21,5 @@ func NewTracer(serviceNmae string, addr string) (opentracing.Tracer, io.Closer, 
 			LocalAgentHostPort:  addr,
 		},
 	}
-	fmt.Println(1)
 	return cfg.NewTracer()
 }

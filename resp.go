@@ -14,7 +14,6 @@ func SwapToStruct(req, target interface{}) (err error) {
 	}
 	err = json.Unmarshal(data, target)
 	return nil
-	fmt.Println(1)
 }
 
 type H struct {

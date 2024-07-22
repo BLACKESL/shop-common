@@ -1,7 +1,6 @@
 package common
 
 import (
-	"fmt"
 	"math"
 	"strconv"
 )
@@ -11,8 +10,6 @@ func StringToArray(intput string) []int {
 	for _, v := range intput {
 		output = append(output, int(v))
 	}
-	fmt.Println(1)
-	fmt.Println(1)
 	for i, j := 0, len(output)-1; i < j; i, j = i+1, j-1 {
 		output[i], output[j] = output[j], output[i]
 	}
